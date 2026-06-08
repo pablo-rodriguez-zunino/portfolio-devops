@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Nombre — Portfolio DevOps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Pablo Rodriguez</a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#education">Educación</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">☀</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <p class="hero-tag">👋 Hola, soy</p>
+    <h1 class="hero-name">Tu <span>Nombre</span></h1>
+    <p class="hero-role">DevOps Engineer</p>
+    <p class="hero-desc">
+      <!-- TODO: escribí una descripción breve sobre vos, tu enfoque y lo que te apasiona -->
+      Estudiante de DevOps apasionado por la automatización, la infraestructura como código
+      y las prácticas de entrega continua. Actualmente completando el Certificado DevOps en ORT ATI.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+      <a href="#contact" class="btn btn-outline">Contacto</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">// habilidades</p>
+    <h2 class="section-title">Stack técnico</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Control de versiones
+        </div>
+        <ul class="skill-list">
+          <!-- TODO: editá los tags con tus herramientas reales -->
+          <li class="skill-tag">Git</li>
+          <li class="skill-tag">GitHub</li>
+          <li class="skill-tag">GitLab</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          CI/CD
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">GitHub Actions</li>
+          <li class="skill-tag">Jenkins</li>
+          <li class="skill-tag">ArgoCD</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Contenedores
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">Docker</li>
+          <li class="skill-tag">Kubernetes</li>
+          <li class="skill-tag">Helm</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Cloud & IaC
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">AWS</li>
+          <li class="skill-tag">Terraform</li>
+          <li class="skill-tag">Ansible</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Scripting
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">Bash</li>
+          <li class="skill-tag">Python</li>
+          <li class="skill-tag">YAML</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <span class="skill-dot"></span>
+          Observabilidad
+        </div>
+        <ul class="skill-list">
+          <li class="skill-tag">Prometheus</li>
+          <li class="skill-tag">Grafana</li>
+          <li class="skill-tag">ELK Stack</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">// proyectos</p>
+    <h2 class="section-title">Lo que construí</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Pipeline CI/CD</span>
+          <!-- TODO: reemplazá # con el link real del proyecto -->
+          <a href="#" class="project-link">↗ ver repo</a>
+        </div>
+        <p class="project-desc">
+          <!-- TODO: describí tu proyecto real -->
+          Pipeline automatizado con GitHub Actions que ejecuta tests, build de imagen Docker
+          y deploy a un cluster de Kubernetes en cada push a main.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">GitHub Actions</span>
+          <span class="project-tag">Docker</span>
+          <span class="project-tag">Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Infraestructura con Terraform</span>
+          <a href="#" class="project-link">↗ ver repo</a>
+        </div>
+        <p class="project-desc">
+          Definición de infraestructura en AWS usando Terraform: VPC, EC2, RDS y S3
+          con gestión de estado remoto en S3 + DynamoDB.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Terraform</span>
+          <span class="project-tag">AWS</span>
+          <span class="project-tag">IaC</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Portfolio DevOps</span>
+          <a href="#" class="project-link">↗ ver repo</a>
+        </div>
+        <p class="project-desc">
+          Este mismo portfolio: publicado con GitHub Pages y GitHub Actions.
+          Deploy automático en cada push a main.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">GitHub Pages</span>
+          <span class="project-tag">GitHub Actions</span>
+          <span class="project-tag">HTML/CSS</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label">// educación</p>
+    <h2 class="section-title">Formación</h2>
+    <div class="edu-list">
+
+      <div class="edu-item">
+        <span class="edu-year">2024 — 2025</span>
+        <div>
+          <p class="edu-title">Certificado DevOps</p>
+          <!-- TODO: completá con tu institución real -->
+          <p class="edu-institution">ORT ATI — Escuela de Tecnología</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <!-- TODO: agregá tu educación real -->
+        <span class="edu-year">20XX — 20XX</span>
+        <div>
+          <p class="edu-title">Tu título o carrera</p>
+          <p class="edu-institution">Tu institución</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label">// contacto</p>
+    <h2 class="section-title">Trabajemos juntos</h2>
+    <p class="contact-desc">
+      ¿Tenés una oportunidad o proyecto interesante? Escribime.
+    </p>
+    <div class="contact-links">
+      <!-- TODO: reemplazá los href con tus links reales -->
+      <a href="mailto:tu@email.com" class="contact-link">
+        <span class="contact-icon">✉</span> tu@email.com
+      </a>
+      <a href="https://github.com/tu-usuario" class="contact-link" target="_blank">
+        <span class="contact-icon">⌥</span> GitHub
+      </a>
+      <a href="https://linkedin.com/in/tu-usuario" class="contact-link" target="_blank">
+        <span class="contact-icon">◈</span> LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Hecho con Git, GitHub Pages y mucho <span>☕</span> — <span>TU_NOMBRE</span>
+  </footer>
+
+
+  <script type="module">
+    import { initTheme } from './theme.js';
+    initTheme();
+  </script>
+</body>
+</html>
